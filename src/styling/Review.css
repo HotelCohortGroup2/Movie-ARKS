@@ -1,0 +1,28 @@
+.Review-Title {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.Review-Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: black;
+    border-style: solid;
+    margin-left: 40vw;
+    margin-right: 40vw;
+    gap: 3rem;
+    background-color: green;
+}
+
+.Review-Form-Body {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 10px;
+}
+
+.Review-Form-Footer {
+    margin-top: 10px;
+}

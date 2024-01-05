@@ -65,9 +65,7 @@ function Movieslider(args) {
 
   return (
     <div>
-        <div className="Movieslider-title">
-            <h3>Hot Watches</h3>
-        </div>
+      <h3 className="Movieslider-title">Hot Watches</h3>
       <div>
         <Carousel
           activeIndex={activeIndex}

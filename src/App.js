@@ -7,7 +7,7 @@ const App = (props) => {
   return (
     <div>
       <Navbar />
-      <h1>Welcome to Movie Arks</h1>
+      <h1 className="Home-Title">Welcome to Movie Arks</h1>
       <Movieslider />
       <Footer />
     </div>

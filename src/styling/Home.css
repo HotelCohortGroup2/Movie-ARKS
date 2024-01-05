@@ -1,0 +1,41 @@
+/* Navbar Code */
+
+.Navbar-Content {
+    background-color: pink;
+    display: flex;
+    justify-content: right;
+}
+
+.Navbar-Content ul {
+    display: flex;
+    list-style: none;
+}
+
+.Navbar-Content li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Navbar-Content li:hover {
+    background-color: red;
+}
+
+.Navbar-Content a {
+    text-decoration: none;
+}
+/* Home Page Code */
+
+.Home-Title {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Carousel Code */
+
+.Movieslider-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
