@@ -3,7 +3,7 @@ import React from "react"
 const Footer = (props) => {
   return (
     <div>
-      Adrian, Ron, Kevin, Sam
+      ©Created by Movie ARKS
     </div>
   )
 }

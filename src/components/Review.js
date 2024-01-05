@@ -1,10 +1,12 @@
 import React from "react"
 import Navbar from '../components/Navbar'
 
+// Use step to do integers i.e. 3.2. 
+
+
 const Review = (props) => {
 
-  // const handl
-
+  // const handleClick ()
   return (
     <div>
       <Navbar />
@@ -24,3 +26,4 @@ const Review = (props) => {
 }
 
 export default Review
+

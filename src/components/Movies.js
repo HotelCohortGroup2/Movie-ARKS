@@ -1,7 +1,7 @@
 import React from "react"
 import Navbar from "./Navbar"
 
-const Movie = (props) => {
+const Movie = () => {
   return (
     <div>
         <Navbar />
@@ -15,3 +15,4 @@ const Movie = (props) => {
 }
 
 export default Movie
+

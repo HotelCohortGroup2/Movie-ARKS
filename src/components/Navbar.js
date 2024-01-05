@@ -10,6 +10,7 @@ const Navbar = (props) => {
         <Link to='/Aboutus'><li>About us</li></Link>
         <Link to='/Signup'><li>Sign up</li></Link>
         <Link to='/Review'><li>Leave a review</li></Link>
+        <Link to='/Login'><li>Log in</li></Link>
       </ul>
     </div>
   )

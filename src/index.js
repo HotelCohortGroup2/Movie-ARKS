@@ -7,6 +7,11 @@ import Movie from './components/Movies';
 import Aboutus from './components/Aboutus';
 import Signup from './components/Signup';
 import Review from './components/Review';
+import Adrian from './components/Adrian';
+import Ron from './components/Ron';
+import Kevin from './components/Kevin';
+import Sam from './components/Sam';
+import Login from './components/Login';
 
 
 import {
@@ -34,6 +39,26 @@ const router = createBrowserRouter([
   {
     path: "/Review",
     element: <Review />,
+  },
+  {
+    path: "/Adrian",
+    element: <Adrian />,
+  },
+  {
+    path: "/Ron",
+    element: <Ron />,
+  },
+  {
+    path: "/Kevin",
+    element: <Kevin />,
+  },
+  {
+    path: "/Sam",
+    element: <Sam />,
+  },
+  {
+    path: "/Login",
+    element: <Login />,
   },
   
 ]);
