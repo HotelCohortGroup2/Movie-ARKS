@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import '../styling/Review.css'
 
 // Use step to do integers i.e. 3.2.
+//test
 
 const Review = (props) => {
   // const handleClick ()

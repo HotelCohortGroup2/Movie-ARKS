@@ -28,6 +28,7 @@
 .Home-Title {
     display: flex;
     justify-content: center;
+    background-color: orange;
 }
 
 
