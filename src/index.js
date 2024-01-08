@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
-import Movie from './components/Movies';
-import Aboutus from './components/Aboutus';
-import Signup from './components/Signup';
-import Review from './components/Review';
-import Adrian from './components/Adrian';
-import Ron from './components/Ron';
-import Kevin from './components/Kevin';
-import Sam from './components/Sam';
-import Login from './components/Login';
+import Movie from './pages/Movies';
+import Aboutus from './pages/Aboutus';
+import Signup from './pages/Signup';
+import Review from './pages/Review';
+import Adrian from './pages/Adrian';
+import Ron from './pages/Ron';
+import Kevin from './pages/Kevin';
+import Sam from './pages/Sam';
+import Login from './pages/Login' ;
 
 
 import {
