@@ -1,8 +1,16 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react"
+import { BrowserRouter } from "react-router-dom"
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+import App from "./App"
+
+describe("<App />", () => {
+  it("renders the 'Welcome to Movie Arks' text", () => {
+    render(
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    )
+    const welcomeText = screen.getByText(/to/i)
+    expect(welcomeText).toBeInTheDocument()
+  })
+})
