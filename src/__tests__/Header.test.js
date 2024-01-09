@@ -14,15 +14,5 @@ describe("<Navbar />", () => {
         const headerElement = screen.getByText(/log/i)
         expect(headerElement).toBeInTheDocument()
       })
-    // it("renders by class name", () => {
-    //     const { container } = 
-    //   render(
-    //     <BrowserRouter>                                                                      
-    //         <Navbar />                                                                        
-    //       </BrowserRouter>
-    //   )
-    //   // const container = render(<Header />)
-    //   const headerComponent = container.querySelector('.navbar')                                                                                                                                                                     
-    //   expect(headerComponent).toHaveTextContent('log')
-    // })
+
 })
