@@ -1,14 +1,27 @@
 import React from "react"
 import Navbar from "../components/Navbar"
 import { Link } from "react-router-dom"
+import "../styling/Aboutus.css";
 
 
 const Kevin = (props) => {
   return (
-    <div>
-      <Navbar />
-      <Link to="/Aboutus"><button>Previous</button></Link>
-      <h1>Kevin's info</h1>
+    <div >
+        <Navbar />
+        <div className="person-page">
+          <h1 className="header h1"> Kevin </h1>
+
+          <div className="person">
+            Picture
+          </div>
+
+          <div className="information">
+            Information goes here
+          </div>
+
+          <br/>
+          <Link to="/Aboutus"><button>Previous</button></Link>
+        </div>
     </div>
   )
 }

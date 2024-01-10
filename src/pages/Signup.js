@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import Navbar from "../components/Navbar"
+import "../styling/SignUp.css"
 
 const Signup = (props) => {
 
@@ -13,16 +14,26 @@ const Signup = (props) => {
   }
 
   return (
-    <div>
+    <div className="signup-header">
         <Navbar />
-        <h1>Sign Up</h1>
+        <h1>WHY WAIT?! SIGN UP TODAY!</h1>
+        <br/>
         <div>
           <div className="Body">
-            <input type="email" placeholder="Email">
-            </input>
-            <input type="password" placeholder="Password"></input>
-            <input type="password" placeholder="Confirm Password"></input>
+            <div>
+              <input type="email" placeholder="Email"></input>
+            </div>
+            <br/>
+            <div>
+              <input type="password" placeholder="Password"></input>
+            </div>
+            <br/>
+            <div>
+              <input type="password" placeholder="Confirm Password"></input>
+            </div>
+
           </div>
+          <br/>
           <div className="Footer">
             <button onClick={handleClick}>Sign up</button>
           </div>

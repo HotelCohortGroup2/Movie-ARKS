@@ -1,21 +1,27 @@
-import React from "react"
-import Navbar from "../components/Navbar"
-import Mockdata from "../components/Mockdata"
+import React from "react";
+import Navbar from "../components/Navbar";
+import Mockdata from "../components/Mockdata";
+import "../styling/Movie.css"; 
 
 const Movie = () => {
-
   return (
     <div>
-        <Navbar />
-        <ul>
+      <Navbar />
+      <div className="movie-container">
         {Mockdata.map((movie) => (
-          <li key={movie.id}>{movie.title}</li>
-          // <li key={movie.id}>{movie.synopsis}</li>
+          <div key={movie.id} className="movie-card">
+            <img src={movie.image} alt={movie.title} className="movie-image" />
+            <div className="movie-details">
+              <h3>{movie.title}</h3>
+              <p>{movie.synopsis}</p>
+            </div>
+          </div>
         ))}
-        </ul>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Movie
+export default Movie;
+
 
