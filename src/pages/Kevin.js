@@ -1,13 +1,13 @@
 import React from "react"
-import Navbar from "../components/Navbar"
-import { Link } from "react-router-dom"
+import Header from "../components/Header"
+import { NavLink } from "react-router-dom"
 import "../styling/Aboutus.css";
 
 
 const Kevin = (props) => {
   return (
     <div >
-        <Navbar />
+        <Header />
         <div className="person-page">
           <h1 className="header h1"> Kevin </h1>
 
@@ -20,7 +20,7 @@ const Kevin = (props) => {
           </div>
 
           <br/>
-          <Link to="/Aboutus"><button>Previous</button></Link>
+          <NavLink to="/Aboutus"><button>Previous</button></NavLink>
         </div>
     </div>
   )

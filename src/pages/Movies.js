@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Header";
 import Mockdata from "../components/Mockdata";
 import "../styling/Movie.css"; 
 
@@ -23,5 +23,3 @@ const Movie = () => {
 };
 
 export default Movie;
-
-
