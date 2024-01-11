@@ -27,6 +27,12 @@ const items = [
     caption: "Avengers End Game",
     key: 3,
   },
+  {
+    src: "https://m.media-amazon.com/images/M/MV5BMjAxNDk2Njk1OV5BMl5BanBnXkFtZTcwOTE5MzIzMQ@@._V1_FMjpg_UX1000_.jpg",
+    altText: "GOAL! The Dream Begins",
+    caption: "GOAL! The Dream Begins",
+    key: 4
+  }
 ];
 
 function Movieslider(args) {

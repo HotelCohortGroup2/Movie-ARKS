@@ -12,8 +12,8 @@
     border-style: solid;
     margin-left: 40vw;
     margin-right: 40vw;
-    gap: 3rem;
-    background-color: green;
+    gap: 2rem;
+    /* background-color: green; */
 }
 
 .Review-Form-Body {

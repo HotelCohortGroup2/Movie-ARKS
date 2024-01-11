@@ -1,13 +1,26 @@
 import React from "react"
-import Navbar from "../components/Navbar"
-import { Link } from "react-router-dom"
+import Header from "../components/Header"
+import { NavLink } from "react-router-dom"
+import "../styling/Aboutus.css"
 
 const Sam = (props) => {
   return (
-    <div>
-      <Navbar />
-      <Link to="/Aboutus"><button>Previous</button></Link>
-      <h1>Sam's Info</h1>
+    <div >
+        <Header />
+        <div className="person-page">
+          <h1 className="header h1"> Sam </h1>
+
+          <div className="person">
+            Picture
+          </div>
+
+          <div className="information">
+            Information goes here
+          </div>
+
+          <br/>
+          <NavLink to="/aboutus"><button>Previous</button></NavLink>
+        </div>
     </div>
   )
 }

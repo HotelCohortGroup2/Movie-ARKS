@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import Navbar from "../components/Navbar"
+import Header from "../components/Header"
 
 const Login = (props) => {
     
@@ -13,16 +13,23 @@ const Login = (props) => {
      }
 
   return (
-    <div>
-        <Navbar />
+    <div className="signup-header">
+        <Header />
       <h1>Login</h1>
+      <br/>
       <div className="Login-Form">
         <div className="Login-Body">
-            <input type="email" placeholder="Please enter Email"></input>
-            <input type="password" placeholder="Password"></input>
-        </div>
-        <div className="Login-Footer">
-            <button onClick={handleClick}>Login</button>
+            <div>
+              <input type="email" placeholder="Please enter Email"></input>
+            </div>
+            <br/>
+            <div>
+              <input type="password" placeholder="Password"></input>
+            </div>
+            <br/>
+            <div className="Login-Footer">
+                <button onClick={handleClick}>Login</button>
+            </div>
         </div>
       </div>
     </div>
