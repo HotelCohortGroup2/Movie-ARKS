@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import Navbar from "../components/Navbar"
+import Header from "../components/Header"
 
 const Login = (props) => {
     
@@ -14,7 +14,7 @@ const Login = (props) => {
 
   return (
     <div className="signup-header">
-        <Navbar />
+        <Header />
       <h1>Login</h1>
       <br/>
       <div className="Login-Form">

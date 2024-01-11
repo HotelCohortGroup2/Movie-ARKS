@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Header";
 import '../styling/Review.css'
 
 // Use step to do integers i.e. 3.2.
