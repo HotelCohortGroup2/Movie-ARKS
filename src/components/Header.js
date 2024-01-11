@@ -8,11 +8,11 @@ const Header = (props) => {
     <div className="Header-Content">
       <ul>
         <NavLink to='/'><li>Home</li></NavLink>
-        <NavLink to='/Movie'><li>Movies</li></NavLink>
-        <NavLink to='/Aboutus'><li>About us</li></NavLink>
-        <NavLink to='/Review'><li>Leave a review</li></NavLink>
-        <NavLink to='/Signup'><li>Sign up</li></NavLink>
-        <NavLink to='/Login'><li>Log in</li></NavLink>
+        <NavLink to='/movie'><li>Movies</li></NavLink>
+        <NavLink to='/aboutus'><li>About us</li></NavLink>
+        <NavLink to='/review'><li>Leave a review</li></NavLink>
+        <NavLink to='/signup'><li>Sign up</li></NavLink>
+        <NavLink to='/login'><li>Log in</li></NavLink>
       </ul>
     </div>
   )

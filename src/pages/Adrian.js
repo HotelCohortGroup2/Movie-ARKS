@@ -20,7 +20,7 @@ const Adrian = (props) => {
           </div>
 
           <br/>
-          <NavLink to="/Aboutus"><button>Previous</button></NavLink>
+          <NavLink to="/aboutus"><button>Previous</button></NavLink>
         </div>
     </div>
   )

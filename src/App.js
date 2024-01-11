@@ -33,15 +33,15 @@ const App = (props) => {
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Signup" element={<Signup />} />
-        <Route path="/Aboutus" element={<Aboutus />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Movie" element={<Movie />} />
-        <Route path="/Review" element={<Review />} />
-        <Route path="/Adrian" element={<Adrian />} />
-        <Route path="/Ron" element={<Ron />} />
-        <Route path="/Kevin" element={<Kevin />} />
-        <Route path="/Sam" element={<Sam />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/aboutus" element={<Aboutus />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/movie" element={<Movie />} />
+        <Route path="/review" element={<Review />} />
+        <Route path="/adrian" element={<Adrian />} />
+        <Route path="/ron" element={<Ron />} />
+        <Route path="/kevin" element={<Kevin />} />
+        <Route path="/sam" element={<Sam />} />
         <Route path="*" element={<Notfound />} />
       </Routes>
     </div>

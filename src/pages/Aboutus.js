@@ -13,22 +13,14 @@ const Aboutus = (props) => {
         <div>
           <div className="About">Picture will go here</div>
           <div>
-            <Link to="/Adrian"> Adrian</Link>
+            <Link to="/adrian"> Adrian</Link>
           </div>
         </div>
 
         <div>
           <div className="About">Picture will go here</div>
           <div>
-            <Link to="/Ron"> Ron</Link>
-          </div>
-        </div>
-
-
-        <div>
-          <div className="About">Picture will go here</div>
-          <div>
-            <Link to="/Kevin"> Kevin</Link>
+            <Link to="/ron"> Ron</Link>
           </div>
         </div>
 
@@ -36,7 +28,15 @@ const Aboutus = (props) => {
         <div>
           <div className="About">Picture will go here</div>
           <div>
-            <Link to="/Sam"> Sam</Link>
+            <Link to="/kevin"> Kevin</Link>
+          </div>
+        </div>
+
+
+        <div>
+          <div className="About">Picture will go here</div>
+          <div>
+            <Link to="/sam"> Sam</Link>
           </div>
         </div>
 
