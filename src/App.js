@@ -12,10 +12,11 @@ import Adrian from "./pages/Adrian";
 import Ron from './pages/Ron'
 import Kevin from './pages/Kevin'
 import Sam from './pages/Sam'
+import Movieshow from "./pages/Movieshow";
 
 
 const App = (props) => {
-  const [currentMovie, setCurrentMovie] = useState([]);
+  const [movies, setMovies] = useState([]);
 
   useEffect(() => {
     readMovie();
@@ -25,9 +26,25 @@ const App = (props) => {
   const readMovie = () => {
     fetch(`${url}movies`)
       .then((response) => response.json())
-      .then((payload) => setCurrentMovie(payload))
+      .then((payload) => {
+        setMovies(payload)
+      })
       .catch((error) => console.log(error));
   };
+
+  const createReview = (createdReview) => {
+    fetch(`${url}movies`, {
+      body: JSON.stringify(createdReview),
+      headers: {
+        "Content-Type": "application/json"
+      },
+
+      method: "POST",
+    })
+    .then((response) => response.json())
+    .then(() => readMovie())
+    .catch((error) => console.log(error))
+  }
 
   return (
     <div>
@@ -36,8 +53,9 @@ const App = (props) => {
         <Route path="/signup" element={<Signup />} />
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/movie" element={<Movie />} />
-        <Route path="/review" element={<Review />} />
+        <Route path="/movie" element={<Movie movies={movies}/>} />
+        <Route path="/movieshow/:id" element={<Movieshow movies={movies}/>} />
+        <Route path="/review" element={<Review createdReview={createReview}/>} />
         <Route path="/adrian" element={<Adrian />} />
         <Route path="/ron" element={<Ron />} />
         <Route path="/kevin" element={<Kevin />} />
