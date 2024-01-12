@@ -7,11 +7,9 @@ import { Button, Form, FormGroup, Input, Label } from "reactstrap"
 // Use step to do integers i.e. 3.2.
 //test
 
-const Review = ({ createReview, currentUser, currentMovie }) => {
+const Review = ({ createReview, currentUser }) => {
   const navigate = useNavigate();
-  const {id} = useParams();
-  const movieID = id
-  console.log(id)
+  const {movieID} = useParams();
   const [newReview, setNewReview] = useState({
     rating: "",
     user_id: currentUser.id,

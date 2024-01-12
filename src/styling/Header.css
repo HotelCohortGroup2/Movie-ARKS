@@ -1,0 +1,7 @@
+/* Header code */
+
+.Header-Content #root{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    background-color:blueviolet;
+}

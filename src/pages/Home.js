@@ -7,7 +7,7 @@ const Home = (props) => {
   return (
     <div>
         <Header />
-      <h1 className="Home-Title">Welcome to Movie Arks</h1>
+      <h1 className="Home-Title">Welcome to Movie ARKS</h1>
       <Movieslider />
       <Footer />
     </div>

@@ -22,6 +22,7 @@ const App = (props) => {
   const [movies, setMovies] = useState([]);
   const [currentUser, setCurrentUser] = useState(mockUsers[0]);
   const [currentMovie, setCurrentMovie] = useState({});
+  const [currentReview, setCurrentReview] = useState([]);
   useEffect(() => {
     readMovie();
   }, []);
@@ -35,21 +36,29 @@ const App = (props) => {
       })
       .catch((error) => console.log(error));
   };
+  const readReview = () => {
+    fetch(`${url}reviews`)
+    .then((response) => response.json())
+    .then((payload) => {
+      setCurrentReview(payload)
+    })
+  }
 
   const createReview = (createdReview, movieID) => {
     console.log(createdReview)
-    // fetch(`${url}movies`, {
-    //   body: JSON.stringify(createdReview),
-    //   headers: {
-    //     "Content-Type": "application/json"
-    //   },
+    fetch(`${url}reviews`, {
+      body: JSON.stringify(createdReview),
+      headers: {
+        "Content-Type": "application/json"
+      },
 
-    //   method: "POST",
-    // })
-    // .then((response) => response.json())
-    // .then(() => readMovie())
-    // .catch((error) => console.log(error))
+      method: "POST",
+    })
+    .then((response) => response.json())
+    .then(() => readMovie())
+    .catch((error) => console.log(error))
   }
+console.log(currentMovie)
 
   return (
     <div>
@@ -59,8 +68,8 @@ const App = (props) => {
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/login" element={<Login />} />
         <Route path="/movie" element={<Movie movies={movies}/>} />
-        <Route path="/movieshow/:id" element={<Movieshow movies={movies}/>} />
-        <Route path="/review/:movieID" element={<Review currentMovie={currentMovie} currentUser={currentUser} createReview={createReview}/>} />
+        <Route path="/movieshow/:id" element={<Movieshow readReview={readReview} movies={movies}/>} />
+        <Route path="/review/:movieID" element={<Review currentUser={currentUser} createReview={createReview}/>} />
         <Route path="/reviewindex" element={<Reviewindex />} />
         <Route path="/adrian" element={<Adrian />} />
         <Route path="/ron" element={<Ron />} />

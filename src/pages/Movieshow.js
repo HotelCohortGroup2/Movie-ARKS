@@ -5,8 +5,7 @@ import { Button } from "reactstrap";
 const Movieshow = ({ movies }) => {
   const { id } = useParams();
 
-  let selectedMovie = movies.find((movie) => movie.id === +id);
-
+  let selectedMovie = movies?.find((movie) => movie.id === +id);
   return (
     <>
       {selectedMovie && (

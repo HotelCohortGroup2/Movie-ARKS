@@ -1,7 +1,19 @@
 /* Navbar Code */
 
+body #root{
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-image: url(https://img.freepik.com/free-photo/movie-background-collage_23-2149876028.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .Navbar-Content {
-    background-color: pink;
     display: flex;
     justify-content: right;
 }
@@ -26,9 +38,10 @@
 /* Home Page Code */
 
 .Home-Title {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: flex;
     justify-content: center;
-    background-color: orange;
+    color:azure;
 }
 
 
@@ -36,7 +49,17 @@
 /* Carousel Code */
 
 .Movieslider-title {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: flex;
     justify-content: center;
     padding-top: 50px;
+    color:azure;
+}
+
+.carousel-image {
+    display: flex;
+    max-width: 600px;
+    max-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }

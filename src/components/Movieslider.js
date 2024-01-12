@@ -10,13 +10,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const items = [
   {
-    src: "https://live.staticflickr.com/6023/5935427637_be38b7685a_b.jpg",
+    src: "https://m.media-amazon.com/images/M/MV5BNWI5ODc4MTAtN2U2NC00ZDk3LWE3NjAtNjIyODE2YTlhYjYwXkEyXkFqcGdeQXVyOTA3ODI3NDA@._V1_.jpg",
     altText: "Scott Pilgrim vs The World",
     caption: "Scott Pilgrim vs The World",
     key: 1,
   },
   {
-    src: "https://www.psu.com/wp/wp-content/uploads/2019/04/world-war-z-768x432.jpg",
+    src: "https://m.media-amazon.com/images/M/MV5BNDQ4YzFmNzktMmM5ZC00MDZjLTk1OTktNDE2ODE4YjM2MjJjXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_FMjpg_UX1000_.jpg",
     altText: "World War Z",
     caption: "World War Z",
     key: 2,
