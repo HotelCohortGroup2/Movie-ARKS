@@ -1,30 +1,67 @@
-import React from "react";
 import Navbar from "../components/Header";
-import '../styling/Review.css'
+import "../styling/Review.css";
+import React, { useState } from "react"
+import { useNavigate } from "react-router-dom"
+import { Button, Form, FormGroup, Input, Label } from "reactstrap"
 
 // Use step to do integers i.e. 3.2.
 //test
 
-const Review = (props) => {
-  // const handleClick ()
+const Review = ({ createReview, currentUser }) => {
+  const navigate = useNavigate();
+
+  const [newReview, setNewReview] = useState({
+    rating: "",
+    user_id: currentUser.id,
+
+    comment: "",
+  });
+
+  const handleChange = (e) => {
+    //   // spread operator makes a copy of our state object(newCat)
+    //   // e.target.name will tell us which key we're updating
+    //   // e.target.value will tell us the value we're inputting and setting to that key
+    setNewReview({ ...newReview, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = () => {
+    createReview(newReview);
+    // navigate("/reviewindex");
+    alert('hello')
+  }
+
   return (
     <div>
       <Navbar />
-      <h1 className="Review-Title">Review</h1>
-      <div className="Review-Form">
-        {/* <div className="Review-Form-Title">
-          <input type="text" placeholder="Movie title"></input>
-        </div> */}
-        <div className="Review-Form-Body">
-          <input type="number" min="0" max="5" placeholder="Rate 1 - 5"></input>
-          <input type="text" placeholder="Write a review"></input>
-        </div>
-        <div className="Review-Form-Footer">
-          <button>Submit Review</button>
-        </div>
-      </div>
+    <Form>
+      <FormGroup>
+        <Label for="rating">Rating</Label>
+        <Input
+        id="rating"
+        name="rating"
+        type="number"
+        min="1"
+        max="5"
+        placeholder="Rate the movie from 1-5"
+        onChange={handleChange}
+        value={newReview.rating}
+        />
+      </FormGroup>
+      <FormGroup>
+        <Label for="comment">Comment</Label>
+        <Input
+        id="comment"
+        name="comment"
+        type="text"
+        placeholder="Write a review"
+        onChange={handleChange}
+        value={newReview.comment}
+        />
+      </FormGroup>
+      <Button onClick={handleSubmit}>Submit</Button>
+    </Form>
     </div>
-  );
-};
+  )
+}
 
 export default Review;

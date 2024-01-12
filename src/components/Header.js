@@ -10,7 +10,6 @@ const Header = (props) => {
         <NavLink to='/'><li>Home</li></NavLink>
         <NavLink to='/movie'><li>Movies</li></NavLink>
         <NavLink to='/aboutus'><li>About us</li></NavLink>
-        <NavLink to='/review'><li>Leave a review</li></NavLink>
         <NavLink to='/signup'><li>Sign up</li></NavLink>
         <NavLink to='/login'><li>Log in</li></NavLink>
       </ul>

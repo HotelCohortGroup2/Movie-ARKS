@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Header";
-import Mockdata from "../components/Mockdata";
+import Mockdata from "../Mockdata";
 import "../styling/Movie.css";
 import { createRoutesFromElements } from "react-router-dom";
 import { NavLink, useParams } from "react-router-dom";

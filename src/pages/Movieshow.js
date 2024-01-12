@@ -17,10 +17,11 @@ const Movieshow = ({ movies }) => {
           />
           <h3>{selectedMovie.genre}</h3>
           <h3>{selectedMovie.length}</h3>
-          <h3>{selectedMovie.rating}</h3>
+          {/* <h3>{selectedMovie.rating}</h3> */}
           <NavLink to="/movie">
             <Button>Go Back</Button>
           </NavLink>
+          <NavLink to="/review"><Button>Leave a review</Button></NavLink>
         </>
       )}
     </>
