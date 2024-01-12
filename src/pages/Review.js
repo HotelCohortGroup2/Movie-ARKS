@@ -1,19 +1,21 @@
 import Navbar from "../components/Header";
 import "../styling/Review.css";
 import React, { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import { Button, Form, FormGroup, Input, Label } from "reactstrap"
 
 // Use step to do integers i.e. 3.2.
 //test
 
-const Review = ({ createReview, currentUser }) => {
+const Review = ({ createReview, currentUser, currentMovie }) => {
   const navigate = useNavigate();
-
+  const {id} = useParams();
+  const movieID = id
+  console.log(id)
   const [newReview, setNewReview] = useState({
     rating: "",
     user_id: currentUser.id,
-
+    movie_id: movieID,
     comment: "",
   });
 
@@ -25,9 +27,8 @@ const Review = ({ createReview, currentUser }) => {
   };
 
   const handleSubmit = () => {
-    createReview(newReview);
-    // navigate("/reviewindex");
-    alert('hello')
+    createReview(newReview, movieID);
+    navigate(`/movieshow/${movieID}`);
   }
 
   return (

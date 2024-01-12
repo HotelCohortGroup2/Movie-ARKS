@@ -21,7 +21,7 @@ const Movieshow = ({ movies }) => {
           <NavLink to="/movie">
             <Button>Go Back</Button>
           </NavLink>
-          <NavLink to="/review"><Button>Leave a review</Button></NavLink>
+          <NavLink to={`/review/${selectedMovie.id}`}><Button>Leave a review</Button></NavLink>
         </>
       )}
     </>

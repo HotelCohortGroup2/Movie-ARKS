@@ -14,11 +14,14 @@ import Kevin from './pages/Kevin'
 import Sam from './pages/Sam'
 import Movieshow from "./pages/Movieshow";
 import mockUsers from "./Mockuser";
+import mockData from "./Mockdata";
+import Reviewindex from "./Reviewindex";
 
 
 const App = (props) => {
   const [movies, setMovies] = useState([]);
   const [currentUser, setCurrentUser] = useState(mockUsers[0]);
+  const [currentMovie, setCurrentMovie] = useState({});
   useEffect(() => {
     readMovie();
   }, []);
@@ -33,7 +36,7 @@ const App = (props) => {
       .catch((error) => console.log(error));
   };
 
-  const createReview = (createdReview) => {
+  const createReview = (createdReview, movieID) => {
     console.log(createdReview)
     // fetch(`${url}movies`, {
     //   body: JSON.stringify(createdReview),
@@ -57,7 +60,8 @@ const App = (props) => {
         <Route path="/login" element={<Login />} />
         <Route path="/movie" element={<Movie movies={movies}/>} />
         <Route path="/movieshow/:id" element={<Movieshow movies={movies}/>} />
-        <Route path="/review" element={<Review currentUser={currentUser} createReview={createReview}/>} />
+        <Route path="/review/:movieID" element={<Review currentMovie={currentMovie} currentUser={currentUser} createReview={createReview}/>} />
+        <Route path="/reviewindex" element={<Reviewindex />} />
         <Route path="/adrian" element={<Adrian />} />
         <Route path="/ron" element={<Ron />} />
         <Route path="/kevin" element={<Kevin />} />
