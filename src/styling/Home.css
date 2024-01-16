@@ -1,34 +1,27 @@
 /* Navbar Code */
 
-.Navbar-Content {
-    background-color: pink;
+body #root{
+    /* height: 100%; */
     display: flex;
-    justify-content: right;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin: 0;
+    background: #141414;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+	height: 100vh;
 }
 
-.Navbar-Content ul {
-    display: flex;
-    list-style: none;
-}
-
-.Navbar-Content li {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.Navbar-Content li:hover {
-    background-color: red;
-}
-
-.Navbar-Content a {
-    text-decoration: none;
-}
 /* Home Page Code */
 
 .Home-Title {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: flex;
     justify-content: center;
-    background-color: orange;
+    color:azure;
 }
 
 
@@ -36,7 +29,17 @@
 /* Carousel Code */
 
 .Movieslider-title {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: flex;
     justify-content: center;
     padding-top: 50px;
+    color:azure;
+}
+
+.carousel-image {
+    display: flex;
+    max-width: 600px;
+    max-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }

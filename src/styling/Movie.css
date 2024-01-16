@@ -1,4 +1,14 @@
-.movie-container {
+body {
+  background: #141414;
+  color: #ffffff;
+}
+
+.movie-scroll > .row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+/* .movie-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -26,4 +36,4 @@
   .movie-details {
     padding: 10px;
   }
-  
+   */
