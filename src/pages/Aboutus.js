@@ -7,7 +7,7 @@ import "../styling/Aboutus.css";
 const Aboutus = () => {
 	return (
 		<div className="header">
-			<Navbar />
+			{/* <Navbar /> */}
 			<h1>About us</h1>
 			<div className="container">
 				<div>
