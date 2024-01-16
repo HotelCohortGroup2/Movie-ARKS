@@ -5,8 +5,8 @@ import Signup from "./pages/Signup";
 import Aboutus from "./pages/Aboutus";
 import Login from "./pages/Login";
 import Movie from "./pages/Movie";
-import MovieShow from "./pages/MovieShow";
-import NotFound from "./pages/NotFound";
+import MovieShow from "./pages/Movieshow";
+import NotFound from "./pages/Notfound";
 import Home from "./pages/Home";
 import ReviewNew from "./pages/ReviewNew";
 import ReviewEdit from "./pages/ReviewEdit";
@@ -94,7 +94,7 @@ const App = () => {
 	};
 
 	const login = (userInfo) => {
-		fetch(`${url}/login`, {
+		fetch(`${url}login`, {
 			body: JSON.stringify(userInfo),
 			headers: {
 				"Content-Type": "application/json",
@@ -117,7 +117,7 @@ const App = () => {
 	};
 
 	const signup = (userInfo) => {
-		fetch(`${url}/signup`, {
+		fetch(`${url}signup`, {
 			body: JSON.stringify(userInfo),
 			headers: {
 				"Content-Type": "application/json",
@@ -140,7 +140,7 @@ const App = () => {
 	};
 
 	const logout = () => {
-		fetch(`${url}/logout`, {
+		fetch(`${url}logout`, {
 			headers: {
 				"Content-Type": "application/json",
 				Authorization: localStorage.getItem("token"),
