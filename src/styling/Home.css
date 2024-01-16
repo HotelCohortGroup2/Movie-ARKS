@@ -4,37 +4,17 @@ body #root{
     /* height: 100%; */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     margin: 0;
-    background-image: url(https://img.freepik.com/free-photo/movie-background-collage_23-2149876028.jpg);
+    background: #141414;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    width: 100vw;
+	height: 100vh;
 }
 
-.Navbar-Content {
-    display: flex;
-    justify-content: right;
-}
-
-.Navbar-Content ul {
-    display: flex;
-    list-style: none;
-}
-
-.Navbar-Content li {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.Navbar-Content li:hover {
-    background-color: red;
-}
-
-.Navbar-Content a {
-    text-decoration: none;
-}
 /* Home Page Code */
 
 .Home-Title {

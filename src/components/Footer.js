@@ -1,6 +1,6 @@
 import React from "react"
 
-const Footer = (props) => {
+const Footer = () => {
   return (
     <div>
       ©Created by Movie ARKS

@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom"
 import "../styling/Aboutus.css";
 
 
-const Kevin = (props) => {
+const Kevin = () => {
   return (
     <div >
         <Header />
