@@ -33,7 +33,8 @@ const App = () => {
 		if (loggedInUser) {
 			setCurrentUser(JSON.parse(loggedInUser));
 		}
-		readMovies();
+		readMovies()
+		readReviews()
 	}, []);
 
 	const url = "http://localhost:3000/";
@@ -45,6 +46,9 @@ const App = () => {
 			})
 			.catch((error) => console.log(error));
 	};
+
+
+
 	const readReviews = () => {
 		fetch(`${url}reviews`)
 			.then((response) => response.json())
@@ -170,7 +174,7 @@ const App = () => {
 				<Route path="/sam" element={<Sam />} />
 				<Route
 					path="/movieshow/:id"
-					element={<MovieShow readReviews={readReviews} movies={movies} />}
+					element={<MovieShow reviews={reviews} movies={movies} />}
 				/>
 
 				{
