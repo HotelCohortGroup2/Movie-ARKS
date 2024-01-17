@@ -24,7 +24,7 @@ import "./App.css";
 
 const App = () => {
 	const [movies, setMovies] = useState([]);
-	const [currentUser, setCurrentUser] = useState(mockUsers[0]);
+	const [currentUser, setCurrentUser] = useState(null);
 	const [currentMovie, setCurrentMovie] = useState({});
 	const [reviews, setReviews] = useState([]);
 
