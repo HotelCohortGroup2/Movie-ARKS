@@ -10,7 +10,7 @@ const Adrian = () => {
 			<div className="person-page">
 				<h1 className="header h1"> Adrian</h1>
 
-				<div className="person">Picture</div>
+				<div className="person" >Picture</div>
 
 				<div className="information">Information goes here</div>
 
