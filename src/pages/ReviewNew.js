@@ -28,7 +28,6 @@ const ReviewNew = ({ createReview, currentUser }) => {
 
 	return (
 		<div>
-			<Navbar />
 			<Form>
 				<FormGroup>
 					<Label for="rating">Rating</Label>

@@ -1,7 +1,6 @@
 import React from "react";
 import { Nav, NavItem, Navbar, NavbarBrand, Button } from "reactstrap";
 import { NavLink, useNavigate } from "react-router-dom";
-import SearchBox from "./SearchBox";
 import "../styling/Home.css";
 
 const Header = ({ currentUser, logout }) => {
@@ -13,14 +12,13 @@ const Header = ({ currentUser, logout }) => {
   };
   return (
     <Navbar className="my-2" color="secondary" dark>
-      <SearchBox />
-      <NavbarBrand>Movie</NavbarBrand>
+      <NavbarBrand>Movie ARKS</NavbarBrand>
       <Nav justified>
         <NavItem>
           <NavLink to="/">Home</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to="/movie">Movie</NavLink>
+          <NavLink to="/movie">Movies</NavLink>
         </NavItem>
         {!currentUser && (
           <>

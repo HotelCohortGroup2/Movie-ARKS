@@ -24,7 +24,6 @@ const ReviewEdit = ({ reviews, updateReview }) => {
 	};
 	return (
 		<div>
-			<Navbar />
 			<Form>
 				<FormGroup>
 					<Label for="rating">Rating</Label>

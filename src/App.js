@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Mockdata from "./Mockdata";
+// import Mockdata from "./Mockdata";
 import { Route, Routes } from "react-router-dom";
 import Signup from "./pages/Signup";
 import Aboutus from "./pages/Aboutus";
@@ -18,7 +18,6 @@ import mockUsers from "./Mockuser";
 import mockData from "./Mockdata";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import SearchBox from "./components/SearchBox";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 

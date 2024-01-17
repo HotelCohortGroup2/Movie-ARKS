@@ -25,7 +25,9 @@ const MovieShow = ({ movies, reviews, currentUser }) => {
           <h3>{selectedMovie.length}</h3>
 
           {selectedReviews.map((value, index) => {
-			return <h3>{value.comment}</h3> 
+			return <NavLink to="/reviewedit/:id"><Button>Edit Review</Button>
+          <h3>{value.comment}</h3>
+            </NavLink>
 		  })}
 
           <NavLink to="/movie" className="nav-link">
