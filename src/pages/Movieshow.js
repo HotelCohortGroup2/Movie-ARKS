@@ -2,13 +2,12 @@ import React from "react";
 import { NavLink, useParams } from "react-router-dom";
 import { Button } from "reactstrap";
 
-const MovieShow = ({ movies, reviews }) => {
+const MovieShow = ({ movies, reviews, currentUser }) => {
   const { id } = useParams();
 
   let selectedMovie = movies?.find((movie) => movie.id === +id);
 
-  // hey create a funciton that finds all reviews that correlate to the corresponding movie.id
-  // i.e. all reviews that have a movie_id of 2. take those and store them in this variable
+
   let selectedReviews = reviews?.filter((review) => review.movie_id === selectedMovie.id);
 
 
@@ -32,9 +31,10 @@ const MovieShow = ({ movies, reviews }) => {
           <NavLink to="/movie" className="nav-link">
             <Button>Go Back</Button>
           </NavLink>
+		  {!currentUser && (
           <NavLink to={`/review/${selectedMovie.id}`}>
             <Button>Leave a review</Button>
-          </NavLink>
+          </NavLink> )}
         </>
       )}
     </>
