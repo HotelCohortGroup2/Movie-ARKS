@@ -36,7 +36,7 @@ const App = () => {
 		readReviews()
 	}, []);
 
-	const url = "http://localhost:3000/";
+	const url = "https://movie-arks-backend.onrender.com/";
 	const readMovies = () => {
 		fetch(`${url}movies`)
 			.then((response) => response.json())
