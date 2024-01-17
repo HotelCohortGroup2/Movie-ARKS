@@ -14,8 +14,6 @@ import Adrian from "./pages/Adrian";
 import Ron from "./pages/Ron";
 import Kevin from "./pages/Kevin";
 import Sam from "./pages/Sam";
-import mockUsers from "./Mockuser";
-import mockData from "./Mockdata";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -58,7 +56,6 @@ const App = () => {
 	};
 
 	const createReview = (createdReview, movieID) => {
-		// console.log(createdReview);
 		fetch(`${url}reviews`, {
 			body: JSON.stringify(createdReview),
 			headers: {
@@ -71,8 +68,9 @@ const App = () => {
 			.catch((error) => console.log(error));
 	};
 
-	const updateReview = (selectedReview, id) => {
-		fetch(`${url}reviews/${id}`, {
+	const updateReview = (selectedReview, reviewId) => {
+		console.log(selectedReview)
+		fetch(`${url}reviews/${reviewId}`, {
 			body: JSON.stringify(selectedReview),
 			headers: {
 				"Content-Type": "application/json",
@@ -84,8 +82,8 @@ const App = () => {
 			.catch((error) => console.log("Update review errors:", error));
 	};
 
-	const deleteReview = (id) => {
-		fetch(`${url}reviews/${id}`, {
+	const deleteReview = (reviewId) => {
+		fetch(`${url}reviews/${reviewId}`, {
 			headers: {
 				"Content-Type": "application/json",
 			},
@@ -173,7 +171,7 @@ const App = () => {
 				<Route path="/sam" element={<Sam />} />
 				<Route
 					path="/movieshow/:id"
-					element={<MovieShow reviews={reviews} movies={movies} />}
+					element={<MovieShow reviews={reviews} movies={movies} deleteReview={deleteReview}/>}
 				/>
 
 				{
@@ -193,7 +191,7 @@ const App = () => {
 							}
 						/>
 						<Route
-							path="/reviewedit/:id"
+							path="/reviewedit/:reviewId"
 							element={
 								<ReviewEdit reviews={reviews} updateReview={updateReview} />
 							}

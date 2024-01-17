@@ -1,12 +1,14 @@
-import Navbar from "../components/Header";
-import { useState } from "react";
+import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Button, Form, FormGroup, Input, Label } from "reactstrap";
-
+//its not grabbing id from url
 const ReviewEdit = ({ reviews, updateReview }) => {
-	const { id } = useParams();
+	const { reviewId } = useParams();
 	const navigate = useNavigate();
-	let currentReview = reviews?.find((review) => review.id === +id);
+
+
+	let currentReview = reviews?.find((review) => review.id === +reviewId);
+
 
 	const [editReview, setEditReview] = useState({
 		rating: currentReview?.rating,
@@ -19,9 +21,10 @@ const ReviewEdit = ({ reviews, updateReview }) => {
 	};
 
 	const handleSubmit = () => {
-		updateReview(editReview, currentReview.id);
-		navigate(`/movieshow/${id}`);
+		updateReview(editReview, reviewId);
+		navigate(`/movieshow/${currentReview.movie_id}`);
 	};
+
 	return (
 		<div>
 			<Form>

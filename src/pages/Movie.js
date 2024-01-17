@@ -11,24 +11,6 @@ const Movie = ({ movies }) => {
 				})}
 			</div>
 		</div>
-		// 	<div className="movie-container">
-		// 		{movies.map((movie) => (
-		// 			<div key={movie.id} className="movie-card">
-		// 				<NavLink to={`/movieshow/${movie.id}`}>
-		// 					<img
-		// 						src={movie.image}
-		// 						alt={movie.title}
-		// 						className="movie-image"
-		// 					/>
-		// 					<div className="movie-details">
-		// 						<h3>{movie.title}</h3>
-		// 						<p>{movie.synopsis}</p>
-		// 					</div>
-		// 				</NavLink>
-		// 			</div>
-		// 		))}
-		// 	</div>
-		// </div>
 	);
 };
 
