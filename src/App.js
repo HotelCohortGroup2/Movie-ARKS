@@ -34,6 +34,7 @@ const App = () => {
 		readReviews()
 	}, []);
 
+	// const url = "https://movie-arks-backend.onredner.com";
 	const url = "http://localhost:3000/";
 	const readMovies = () => {
 		fetch(`${url}movies`)
