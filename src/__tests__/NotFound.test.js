@@ -1,12 +1,12 @@
 import { render, screen } from '@testing-library/react'
 import { BrowserRouter } from 'react-router-dom'
-import Notfound from '../pages/Notfound';
+import NotFound from '../pages/NotFound';
 
-describe("<Notfound />", () => {
+describe("<NotFound />", () => {
   it('renders learn react link', () => {
     render(
       <BrowserRouter>
-        <Notfound />
+        <NotFound />
       </BrowserRouter>
     )
     const notFoundElement = screen.getByText(/not/i)
