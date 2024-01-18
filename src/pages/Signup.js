@@ -19,30 +19,24 @@ const Signup = ({ signup }) => {
 	};
 
 	return (
-		<div>
-			<form ref={formRef} onSubmit={handleSubmit}>
-				Email: <input type="email" name="email" placeholder="email" />
-				<br />
-				Password:{" "}
-				<input type="password" name="password" placeholder="password" />
-				<br />
-				Confirm Password:{" "}
-				<input
-					type="password"
-					name="password_confirmation"
-					placeholder="confirm password"
-				/>
-				<br />
-				<button type="submit" value="Submit">
-					Submit
-				</button>
-				<br />
-			</form>
-			<br />
-			<div>
-				Already registered, <a href="/login">Login</a> here.
-			</div>
+		<div className="signup-container">
+		<form ref={formRef} onSubmit={handleSubmit} className="signup-form">
+			<label>Email:</label>
+			<input type="email" name="email" placeholder="Enter your email" />
+			<label>Password:</label>
+			<input type="password" name="password" placeholder="Enter your password" />
+			<label>Confirm Password:</label>
+			<input
+				type="password"
+				name="password_confirmation"
+				placeholder="Confirm your password"
+			/>
+			<button type="submit">Sign Up</button>
+		</form>
+		<div className="login-link">
+			Already registered? <a href="/login">Login here</a>.
 		</div>
+	</div>
 	);
 	//  const [isClicked, setIsClicked] = useState(false)
 

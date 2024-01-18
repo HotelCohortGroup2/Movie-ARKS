@@ -1,7 +1,10 @@
-/* Header code */
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
 
-.Header-Content #root{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 15px;
-    background-color:blueviolet;
+.header-font {
+	font-family: "Bungee Shade", sans-serif;
+    color: black;
+}
+
+.nav-link {
+    color: black;
 }

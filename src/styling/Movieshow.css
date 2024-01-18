@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Limelight&display=swap');
+
+.movie-show-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.movie-details {
+  display: flex;
+}
+
+.movie-image {
+  height: 300px;
+  width: 200px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.info-container {
+  margin-left: 20px;
+  color: white;
+}
+
+.movie-info {
+  font-family: 'Bungee Shade', sans-serif;
+font-family: 'Limelight', sans-serif;
+}
+
+.review-comment {
+  color: white;
+}
+
+.review-buttons {
+  
+}

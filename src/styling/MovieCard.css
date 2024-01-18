@@ -1,4 +1,7 @@
-body {
-  background: #141414;
-  color: #ffffff;
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Limelight&display=swap');
+
+.card-font{
+  font-family: 'Bungee Shade', sans-serif;
+  font-family: 'Limelight', sans-serif;
+  color: yellow;
 }
