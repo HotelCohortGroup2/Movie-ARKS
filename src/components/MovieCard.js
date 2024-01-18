@@ -29,10 +29,10 @@ const MovieCard = ({ movie, index }) => {
           {/* <CardSubtitle tag="h6" className="mb-2 text-muted">
             Release Date: {movie.releaseDate}
           </CardSubtitle> */}
-          <CardSubtitle tag="h6" className="mb-2 text-muted">
+          <CardSubtitle tag="h6" className="mb-2 text-muted card-font">
             Genre: {movie.genre}
           </CardSubtitle>
-          <CardSubtitle tag="h6" className="mb-2 text-muted">
+          <CardSubtitle className="mb-2 card-font">
             Rating: {renderStars(movie.rating)}
           </CardSubtitle>
         </CardBody>

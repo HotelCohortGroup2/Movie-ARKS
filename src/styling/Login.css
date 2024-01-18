@@ -1,0 +1,42 @@
+.auth-body {
+  text-align: center;
+  margin: 20px;
+}
+
+.header {
+  color: white;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: auto;
+}
+
+label {
+  margin-top: 10px;
+  color: white;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 8px;
+}
+
+.actions {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.actions:hover {
+  background-color: #45a049;
+}
+
+.links {
+  margin-top: 15px;
+  color: white;
+}
