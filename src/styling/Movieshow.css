@@ -1,0 +1,29 @@
+.img-size {
+  height: 300px;
+  width: 200px;
+}
+
+.movie-show-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.review-container {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.review-comment {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.review-rating {
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  margin-top: 10px;
+}

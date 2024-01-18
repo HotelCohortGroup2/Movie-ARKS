@@ -1,0 +1,27 @@
+/* Footer.css */
+
+.footer-container {
+  background-color: #141414;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-text {
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.footer-text a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-text a:hover {
+  color: #ffbb00;
+}

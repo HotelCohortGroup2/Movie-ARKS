@@ -11,7 +11,7 @@
 
 .container {
     display: flex;
-    justify-content: space-evenly; /* or 'space-around' or 'space-evenly' based on your preference */
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 50px;
 }
@@ -33,7 +33,7 @@
 
 .person-page{
     display: flex;
-    justify-content: space-evenly; /* or 'space-around' or 'space-evenly' based on your preference */
+    justify-content: space-evenly;
     align-items: center;
     flex-direction:column;
     margin-top:50px

@@ -6,7 +6,7 @@ import Aboutus from "./pages/Aboutus";
 import Login from "./pages/Login";
 import Movie from "./pages/Movie";
 import MovieShow from "./pages/Movieshow";
-import NotFound from "./pages/Notfound";
+import NotFound from "./pages/NotFound";
 import Home from "./pages/Home";
 import ReviewNew from "./pages/ReviewNew";
 import ReviewEdit from "./pages/ReviewEdit";

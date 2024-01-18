@@ -1,45 +1,46 @@
 /* Navbar Code */
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
 
-body #root{
-    /* height: 100%; */
+body #root {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; */
     margin: 0;
     background: #141414;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100vw;
-	height: 100vh;
-}
-
-/* Home Page Code */
-
-.Home-Title {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 100vh;
+  }
+  
+  /* Home Page Code */
+  
+  .home-container {
+    text-align: center;
+  margin-bottom: 80px;;
+  }
+  
+  .home-title {
+    text-align: center;
+    font-family: "Bungee Shade", sans-serif;
+    color: yellow;
+  }
+  
+  /* Carousel Code */
+  
+  .Movieslider-title {
+    font-family: "Bungee Shade", sans-serif;
     display: flex;
     justify-content: center;
-    color:azure;
-}
-
-
-
-/* Carousel Code */
-
-.Movieslider-title {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* padding-top: 50px; */
+    color: azure;
+  }
+  
+  .carousel-image {
     display: flex;
-    justify-content: center;
-    padding-top: 50px;
-    color:azure;
-}
-
-.carousel-image {
-    display: flex;
-    max-width: 600px;
-    max-height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
+    max-width: 300px;
+    max-height: 400px;
+    margin: 20px auto; /* Centering the carousel images with some spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow effect */
+  }
+  

@@ -1,11 +1,14 @@
-import React from "react"
+import React from "react";
+import "../styling/Footer.css";
 
 const Footer = () => {
   return (
-    <div>
-      ©Created by Movie ARKS
+    <div className="footer-container">
+      <div className="footer-text">
+        © Created by <span style={{ color: "#ffbb00" }}>Movie ARKS</span>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
