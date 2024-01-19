@@ -37,7 +37,7 @@ const App = () => {
 	const url = "https://movie-arks-backend.onredner.com";
 	// const url = "http://localhost:3000/";
 	const readMovies = () => {
-		fetch(`${url}movies`)
+		fetch(`${url}/movies`)
 			.then((response) => response.json())
 			.then((payload) => {
 				setMovies(payload);
@@ -48,7 +48,7 @@ const App = () => {
 
 
 	const readReviews = () => {
-		fetch(`${url}reviews`)
+		fetch(`${url}/reviews`)
 			.then((response) => response.json())
 			.then((payload) => {
 				setReviews(payload);
@@ -57,7 +57,7 @@ const App = () => {
 	};
 
 	const createReview = (createdReview, movieID) => {
-		fetch(`${url}reviews`, {
+		fetch(`${url}/reviews`, {
 			body: JSON.stringify(createdReview),
 			headers: {
 				"Content-Type": "application/json",
@@ -71,7 +71,7 @@ const App = () => {
 
 	const updateReview = (selectedReview, reviewId) => {
 		console.log(selectedReview)
-		fetch(`${url}reviews/${reviewId}`, {
+		fetch(`${url}/reviews/${reviewId}`, {
 			body: JSON.stringify(selectedReview),
 			headers: {
 				"Content-Type": "application/json",
@@ -84,7 +84,7 @@ const App = () => {
 	};
 
 	const deleteReview = (reviewId) => {
-		fetch(`${url}reviews/${reviewId}`, {
+		fetch(`${url}/reviews/${reviewId}`, {
 			headers: {
 				"Content-Type": "application/json",
 			},
@@ -96,7 +96,7 @@ const App = () => {
 	};
 
 	const login = (userInfo) => {
-		fetch(`${url}login`, {
+		fetch(`${url}/login`, {
 			body: JSON.stringify(userInfo),
 			headers: {
 				"Content-Type": "application/json",
@@ -119,7 +119,7 @@ const App = () => {
 	};
 
 	const signup = (userInfo) => {
-		fetch(`${url}signup`, {
+		fetch(`${url}/signup`, {
 			body: JSON.stringify(userInfo),
 			headers: {
 				"Content-Type": "application/json",
@@ -142,7 +142,7 @@ const App = () => {
 	};
 
 	const logout = () => {
-		fetch(`${url}logout`, {
+		fetch(`${url}/logout`, {
 			headers: {
 				"Content-Type": "application/json",
 				Authorization: localStorage.getItem("token"),
